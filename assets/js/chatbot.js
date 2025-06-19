@@ -38,7 +38,8 @@ function updateChatLog() {
   log.innerHTML = '';
   for (const m of messages) {
     const div = document.createElement('div');
-    div.textContent = (m.role === 'user' ? 'You: ' : 'AI: ') + m.content;
+    div.className = 'chat-message ' + (m.role === 'user' ? 'user' : 'ai');
+    div.textContent = m.content;
     log.appendChild(div);
   }
   log.scrollTop = log.scrollHeight;
