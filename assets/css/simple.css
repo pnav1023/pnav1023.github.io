@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+#description {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  min-height: 4rem;
+}
+
+#chat-container {
+  margin-top: auto;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+#chat-log {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#send-button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
